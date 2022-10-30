@@ -55,6 +55,11 @@ function Home() {
                             SEARCH
                         </Button>
                     </Form.Item>
+
+                    <Form.Item wrapperCol={{offset: 8}} name="TestButton">
+                        <Button type="primary" style={{width: 150, height: 45}} onClick={}>
+                            Test
+                        </Button>
                </Form>
             </F2>
         </div>
