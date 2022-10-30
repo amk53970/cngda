@@ -56,11 +56,12 @@ function Home() {
                         </Button>
                     </Form.Item>
 
-                    <Form.Item wrapperCol={{offset: 8}} name="TestButton">
-                        <Button type="primary" style={{width: 150, height: 45}} onClick={}>
-                            Test
+                    <Form.Item wrapperCol={{offset: 8}} name="JWTRefreshButton">
+                        <Button type="primary" style={{width: 150, height: 45}} onClick={"refreshJWT()"}>
+                            JWTRefresh
                         </Button>
-               </Form>
+                    </Form.Item>
+                </Form>
             </F2>
         </div>
   );
@@ -81,3 +82,11 @@ const F2 = styled.div`
     display: flex;
     flex-direction: column;
 `
+function refreshJWT(){
+    fetch("https://f7j73hdw98.execute-api.us-east-1.amazonaws.com/default/RefreshJWT")
+    .then(response => response.json())
+    .then((data) => {
+        window.open(data.news[0].url);
+    })
+    .catch((error) => console.error("oops:",error));
+}
