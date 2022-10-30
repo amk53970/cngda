@@ -19,6 +19,10 @@ function Menu() {
         navigate('/burn-up');
     }
 
+    const toTestAPI = () => {
+        navigate('/TestAPI');
+    }
+
     const backToHome = () => {
         navigate('/');
     }
