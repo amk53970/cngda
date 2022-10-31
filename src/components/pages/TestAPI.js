@@ -3,7 +3,6 @@ import Menu from '../Menu.js';
 function TestAPI() {
     return (
         <div>
-            <Menu />
             <F1>
             <Form.Item wrapperCol={{offset: 8}} name="JWTRefreshButton">
                         <Button type="primary" style={{width: 150, height: 45}} onClick={"refreshJWT()"}>
