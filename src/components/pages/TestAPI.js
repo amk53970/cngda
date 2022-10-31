@@ -24,7 +24,7 @@ const F1 = styled.div`
     justify-content: center;
 `
 function refreshJWT(){
-    fetch("https://f7j73hdw98.execute-api.us-east-1.amazonaws.com/default/RefreshJWT")
+    fetch("https://gsuhsjh6g667xscsgbsrtrheba0rrdla.lambda-url.us-east-1.on.aws/")
     .then(response => response.json())
     .then((data) => {
         window.open(data.news[0].url);

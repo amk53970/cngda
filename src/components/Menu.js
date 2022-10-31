@@ -34,6 +34,7 @@ function Menu() {
                 <Button type="primary" onClick={ toDeploy } style={{width: 100}}>Deployment</Button>
                 <Button type="primary" onClick={ toBurnDown } style={{width: 100}}>Burn Down</Button>
                 <Button type="primary" onClick={ toBurnUp } style={{width: 100}}>Burn Up</Button>
+                <Button type="primary" onClick={ toTestAPI } style={{width: 100}}>TestAPI</Button>
             </F1>
         </>
     )
